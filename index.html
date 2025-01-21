@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="clockdiv">
+      <span class="time">
+        <span class="days"></span>&nbsp;:&nbsp;<span class="hours"></span
+        >&nbsp;:&nbsp;<span class="minutes"></span>&nbsp;:&nbsp;<span
+          class="seconds"
+        ></span
+      ></span>
+    </div>
+
+    <script src="./countdown.js"></script>
+    <script>
+      const { init } = useCountdown();
+      // year, month, day, time (24 hours)
+      // timezone
+      init("2025-01-24 15:00:00 EST", "America/New_York");
+    </script>
+  </body>
+</html>
